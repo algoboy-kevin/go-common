@@ -50,3 +50,7 @@ go work init ./app ../go-common
 ## Contributing
 
 See `CONTRIBUTING.md`.
+
+## License
+
+MIT. See `LICENSE`.
