@@ -12,7 +12,9 @@ go get github.com/algoboy-kevin/go-common@latest
 
 | Package | What it is | Dependencies |
 |---|---|---|
-| _(none yet; see "Admission" below)_ | | |
+| `market/feed` | Venue-neutral market data events and frames (BBO, L2 book, trades, asset ctx) with a frame-decoder interface; `feed/feedtest` holds the decoder contract tests helpers. | stdlib |
+| `market/rowsink` | Nullable row types and zero-alloc CSV sinks + golden comparison for 1 s `market_state` / `trade_flow` / `funding_settlement` rows. | stdlib |
+| `market/grid` | Frame-driven 1 s feature emission grid over instrument state (rows out via `market/rowsink`, frames in via `market/feed`). | stdlib |
 
 Add one row per package when it lands: name, one line, and its non-stdlib
 dependencies (or "stdlib").
