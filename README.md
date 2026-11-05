@@ -15,6 +15,7 @@ go get github.com/algoboy-kevin/go-common@latest
 | `market/feed` | Venue-neutral market data events and frames (BBO, L2 book, trades, asset ctx) with a frame-decoder interface; `feed/feedtest` holds the decoder contract tests helpers. | stdlib |
 | `market/rowsink` | Nullable row types and zero-alloc CSV sinks + golden comparison for 1 s `market_state` / `trade_flow` / `funding_settlement` rows. | stdlib |
 | `market/grid` | Frame-driven 1 s feature emission grid over instrument state (rows out via `market/rowsink`, frames in via `market/feed`). | stdlib |
+| `decimal` | Decimal string formatting for order prices and sizes: fixed decimals, significant figures with a decimal cap, and round-up to a step. | stdlib |
 
 Add one row per package when it lands: name, one line, and its non-stdlib
 dependencies (or "stdlib").
